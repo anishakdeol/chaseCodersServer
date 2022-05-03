@@ -1,14 +1,12 @@
-const express = require("express");
-const cors = require("cors");
+const express = require('express');
+const app = express();
+const port = 3005;
 
-const server = express();
-server.use(cors("*"));
-server.use(express.json());
+app.get('/', (req, res) => {
+  res.send('You are a quizzard Harry!')
+})
 
-
-server.get("/", (req, res) => {
-   res.send("Hello World");
- });
+module.exports = app;
 
 
 
