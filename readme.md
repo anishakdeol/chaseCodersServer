@@ -1,1 +1,1 @@
-server
+# Server for the quiz
